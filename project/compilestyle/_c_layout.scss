@@ -10,6 +10,12 @@ body{
     display: flex;
     max-width: 1366px;
     width: 100%;
+    .template-request{
+        display: flex;
+        max-width: 1366px;
+        width: 100%;
+        flex-grow: 1;
+    }
     .leftSide{
         width: 230px;
         padding: 28px 32px;

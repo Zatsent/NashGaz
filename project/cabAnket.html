@@ -9,312 +9,314 @@
 </head>
 <body>
     <div class="main">
-        <div class="leftSide">
-            <a href="#" class="logo">
-                <img src="img/cab/logo.svg" alt="">
-            </a>
-            <div class="stepDisplay">
-                <!-- если не указывать current - все шаги будут отмечены как пройденные -->
-                <div class="step current">
-                    <div class="deco"></div>
-                    <span>Анкета</span>
-                </div>
-                <div class="step">
-                    <div class="deco"></div>
-                    <span>Підписання</span>
-                </div>
-                <div class="step ">
-                    <div class="deco"></div>
-                    <span>Скани</span>
+        <div class="template-request">
+            <div class="leftSide">
+                <a href="#" class="logo">
+                    <img src="img/cab/logo.svg" alt="">
+                </a>
+                <div class="stepDisplay">
+                    <!-- если не указывать current - все шаги будут отмечены как пройденные -->
+                    <div class="step current">
+                        <div class="deco"></div>
+                        <span>Анкета</span>
+                    </div>
+                    <div class="step">
+                        <div class="deco"></div>
+                        <span>Підписання</span>
+                    </div>
+                    <div class="step ">
+                        <div class="deco"></div>
+                        <span>Скани</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="centerSide">
-            <div class="anketWrp">
-                <div class="anketa">
-                    <div class="stepDisplayMob">
-                        <!-- если не указывать current - все шаги будут отмечены как пройденные -->
-                        <div class="step ">
-                            <div class="deco"></div>
-                            <span>Анкета</span>
+            <div class="centerSide">
+                <div class="anketWrp">
+                    <div class="anketa">
+                        <div class="stepDisplayMob">
+                            <!-- если не указывать current - все шаги будут отмечены как пройденные -->
+                            <div class="step ">
+                                <div class="deco"></div>
+                                <span>Анкета</span>
+                            </div>
+                            <div class="step current">
+                                <div class="deco "></div>
+                                <span>Підписання</span>
+                            </div>
+                            <div class="step ">
+                                <div class="deco"></div>
+                                <span>Скани</span>
+                            </div>
                         </div>
-                        <div class="step current">
-                            <div class="deco "></div>
-                            <span>Підписання</span>
+    
+                        <div class="topBtns">
+                            <a href="#" class="controlBtn back">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="step ">
-                            <div class="deco"></div>
-                            <span>Скани</span>
+    
+                        <div class="topInfoTip">
+                            <p class="caption">Перевірте правильність заповнення наступних полів:</p>
+                            <p class="tipItem">👉 <b>Прізвище</b> - не співпадає з прізвищем у сканах документів.</p>
+                            <p class="tipItem">👉 <b>Вулиця</b> - не співпадає з адресою у сканах документів</p>
                         </div>
-                    </div>
-
-                    <div class="topBtns">
-                        <a href="#" class="controlBtn back">
-                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="topInfoTip">
-                        <p class="caption">Перевірте правильність заповнення наступних полів:</p>
-                        <p class="tipItem">👉 <b>Прізвище</b> - не співпадає з прізвищем у сканах документів.</p>
-                        <p class="tipItem">👉 <b>Вулиця</b> - не співпадає з адресою у сканах документів</p>
-                    </div>
-
-                    <h1>Персональна інформація</h1>
-
-                    <div class="twoColRows">
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="Iм’я власника">
-                            <div class="deco"></div>
-                            <label for="i1">Ім’я</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="Прізвище власника">
-                            <div class="deco"></div>
-                            <label for="i1">Прізвище</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown error">
-                            <input type="text" id="i1" placeholder="По батькові власника ">
-                            <div class="deco"></div>
-                            <label for="i1">По батькові</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="xxxх xxxх xx">
-                            <div class="deco"></div>
-                            <label for="i1">ІПН</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                    </div>
-
-                    <div class="radioGroup">
-                        <div class="title">НАявність  субсидії</div>
-                        <div class="radioItem"><div class="deco"></div> Є субсидія</div>
-                        <div class="radioItem"><div class="deco"></div> Немає субсидії</div>
-                    </div>
-
-                    <div class="spivVlasnikWrap">
-                        <div class="spivVlasnikTitle">
-                            <img src="img/cab/img.svg" alt="">
-                            <span>Дані про співвласника приміщення</span>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="ПІП співвласника">
-                            <div class="deco"></div>
-                            <label for="i1">1-й співвласник (якщо є) ПІП</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="ПІП співвласника">
-                            <div class="deco"></div>
-                            <label for="i1">2-й співвласник (якщо є) ПІП</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                    </div>
-
-                    <div class="delimeter"></div>
-
-                    <div>
-                        <h2>Дані про газовий лічильник</h2>
+    
+                        <h1>Персональна інформація</h1>
+    
                         <div class="twoColRows">
                             <div class="inputWrap tipShown0 error0">
                                 <input type="text" id="i1" placeholder="Iм’я власника">
-                                <div class="comboboxImg">
-                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
-                                    </svg>
-                                </div>
                                 <div class="deco"></div>
-                                <label for="i1">Вид будівлі</label>
+                                <label for="i1">Ім’я</label>
                                 <div class="botText">niggers)</div>
                             </div>
                             <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Оберіть зі списку">
-                                <div class="comboboxImg">
-                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
-                                    </svg>
-                                </div>
+                                <input type="text" id="i1" placeholder="Прізвище власника">
                                 <div class="deco"></div>
-                                <label for="i1">Тип споживання</label>
+                                <label for="i1">Прізвище</label>
+                                <div class="botText">niggers)</div>
+                            </div>
+                            <div class="inputWrap tipShown error">
+                                <input type="text" id="i1" placeholder="По батькові власника ">
+                                <div class="deco"></div>
+                                <label for="i1">По батькові</label>
+                                <div class="botText">niggers)</div>
+                            </div>
+                            <div class="inputWrap tipShown0 error0">
+                                <input type="text" id="i1" placeholder="xxxх xxxх xx">
+                                <div class="deco"></div>
+                                <label for="i1">ІПН</label>
                                 <div class="botText">niggers)</div>
                             </div>
                         </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="56XM xxxx xxxx xx">
-                            <div class="tipImg">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 0.800781C5.383 0.800781 0 6.18378 0 12.8008C0 19.4178 5.383 24.8008 12 24.8008C18.617 24.8008 24 19.4178 24 12.8008C24 6.18378 18.617 0.800781 12 0.800781ZM12 2.80078C17.535 2.80078 22 7.26578 22 12.8008C22 18.3358 17.535 22.8008 12 22.8008C6.465 22.8008 2 18.3358 2 12.8008C2 7.26578 6.465 2.80078 12 2.80078ZM12 6.80078C9.8 6.80078 8 8.60078 8 10.8008H10C10 9.68378 10.883 8.80078 12 8.80078C13.117 8.80078 14 9.68378 14 10.8008C13.9997 11.1745 13.8818 11.5386 13.6631 11.8416C13.4443 12.1446 13.1357 12.371 12.781 12.4888L12.375 12.6128C11.9753 12.7475 11.6278 13.0039 11.3812 13.346C11.1346 13.6882 11.0013 14.099 11 14.5208V15.8008H13V14.5198L13.406 14.3948C14.1595 14.1415 14.8148 13.6588 15.28 13.0142C15.7452 12.3697 15.997 11.5957 16 10.8008C16 8.60078 14.2 6.80078 12 6.80078ZM11 16.8008V18.8008H13V16.8008H11Z" fill="#93A2BF"/>
-                                </svg>
-                            </div>
-                            <div class="deco"></div>
-                            <label for="i1">Еіс-код</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="Свій варіант">
-                            <div class="comboboxImg">
-                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
-                                </svg>
-                            </div>
-                            <div class="deco"></div>
-                            <label for="i1">Найменування оператора грм</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-                        <div class="inputWrap tipShown0 error0">
-                            <input type="text" id="i1" placeholder="Уведіть назву оператора ГРМ">
-                            <div class="deco"></div>
-                            <label for="i1">Найменування оператора грм</label>
-                            <div class="botText">niggers)</div>
-                        </div>
-
+    
                         <div class="radioGroup">
-                            <div class="title">НАявність  лічильника</div>
-                            <div class="radioItem"><div class="deco"></div> Є лічильник</div>
-                            <div class="radioItem"><div class="deco"></div> Немає лічильника</div>
+                            <div class="title">НАявність  субсидії</div>
+                            <div class="radioItem"><div class="deco"></div> Є субсидія</div>
+                            <div class="radioItem"><div class="deco"></div> Немає субсидії</div>
                         </div>
-                    </div>
-
-                    <div class="delimeter"></div>
-
-                    <div>
-                        <h2>Адреса газового лічильника</h2>
-                        <div class="twoColRows">
+    
+                        <div class="spivVlasnikWrap">
+                            <div class="spivVlasnikTitle">
+                                <img src="img/cab/img.svg" alt="">
+                                <span>Дані про співвласника приміщення</span>
+                            </div>
                             <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                <input type="text" id="i1" placeholder="ПІП співвласника">
                                 <div class="deco"></div>
-                                <label for="i1">Область</label>
+                                <label for="i1">1-й співвласник (якщо є) ПІП</label>
                                 <div class="botText">niggers)</div>
                             </div>
                             <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                <input type="text" id="i1" placeholder="ПІП співвласника">
                                 <div class="deco"></div>
-                                <label for="i1">Населений пункт</label>
+                                <label for="i1">2-й співвласник (якщо є) ПІП</label>
                                 <div class="botText">niggers)</div>
                             </div>
                         </div>
-                        <div class="twoColRows">
+    
+                        <div class="delimeter"></div>
+    
+                        <div>
+                            <h2>Дані про газовий лічильник</h2>
+                            <div class="twoColRows">
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Iм’я власника">
+                                    <div class="comboboxImg">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
+                                        </svg>
+                                    </div>
+                                    <div class="deco"></div>
+                                    <label for="i1">Вид будівлі</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Оберіть зі списку">
+                                    <div class="comboboxImg">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
+                                        </svg>
+                                    </div>
+                                    <div class="deco"></div>
+                                    <label for="i1">Тип споживання</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                            </div>
                             <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
-                                <div class="deco"></div>
-                                <label for="i1">район</label>
-                                <div class="botText">niggers)</div>
-                            </div>
-                            <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
-                                <div class="deco"></div>
-                                <label for="i1">Вулиця</label>
-                                <div class="botText">niggers)</div>
-                            </div>
-                        </div>
-                        <div class="twoColRows">
-                            <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
-                                <div class="deco"></div>
-                                <label for="i1">будинок</label>
-                                <div class="botText">niggers)</div>
-                            </div>
-                            <div class="inputWrap tipShown0 error0">
-                                <input type="text" id="i1" placeholder="Введіть назву вручну">
-                                <div class="deco"></div>
-                                <label for="i1">індекс</label>
-                                <div class="botText">niggers)</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="delimeter"></div>
-
-                    <div class="tarifAnketSection">
-                        <h2>Деталі підключення</h2>
-                        <div class="inputWrap tipShown error0">
-                            <input type="text" id="i1" placeholder="Введіть вручну">
-                            <div class="deco"></div>
-                            <label for="i1">кількість проживаючих</label>
-                            <div class="botText">Всі особи проживаючі на об’єкті, неповнолітні включно</div>
-                        </div>
-
-                        <div class="tarifPicker">
-                            <div class="title">тариф</div>
-                            <div class="item active">
-                                <div class="deco"></div>
-                                <div class="caption">Щорічний</div>
-                                <ul>
-                                    <li>
-                                        <span class="price">2.72<span> ₴/M3</span></span>
-                                    </li>
-                                    <li>Ціна не змінюється</li>
-                                    <li>Передплата на рік</li>
-                                    <li>Термін дії - календарний на рік</li>
-                                </ul>
-                            </div>
-                            <div class="item">
-                                <div class="deco"></div>
-                                <div class="caption">Щомісячний</div>
-                                <ul>
-                                    <li>
-                                        <span class="price">6.73<span> ₴/M3</span></span>
-                                    </li>
-                                    <li>Ціна змінюється щомісяця</li>
-                                    <li>Сплачуєте за фактом споживання</li>
-                                    <li>Термін дії - бестроковий</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tarifPayPicker">
-                            <div class="title">спосіб оплати</div>
-                            <div class="item active">
-                                <div class="deco"></div>
-                                <div class="caption">За квитанціями розрахункової книжки постачальника</div>
+                                <input type="text" id="i1" placeholder="56XM xxxx xxxx xx">
                                 <div class="tipImg">
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 0.800781C5.383 0.800781 0 6.18378 0 12.8008C0 19.4178 5.383 24.8008 12 24.8008C18.617 24.8008 24 19.4178 24 12.8008C24 6.18378 18.617 0.800781 12 0.800781ZM12 2.80078C17.535 2.80078 22 7.26578 22 12.8008C22 18.3358 17.535 22.8008 12 22.8008C6.465 22.8008 2 18.3358 2 12.8008C2 7.26578 6.465 2.80078 12 2.80078ZM12 6.80078C9.8 6.80078 8 8.60078 8 10.8008H10C10 9.68378 10.883 8.80078 12 8.80078C13.117 8.80078 14 9.68378 14 10.8008C13.9997 11.1745 13.8818 11.5386 13.6631 11.8416C13.4443 12.1446 13.1357 12.371 12.781 12.4888L12.375 12.6128C11.9753 12.7475 11.6278 13.0039 11.3812 13.346C11.1346 13.6882 11.0013 14.099 11 14.5208V15.8008H13V14.5198L13.406 14.3948C14.1595 14.1415 14.8148 13.6588 15.28 13.0142C15.7452 12.3697 15.997 11.5957 16 10.8008C16 8.60078 14.2 6.80078 12 6.80078ZM11 16.8008V18.8008H13V16.8008H11Z" fill="#93A2BF"/>
                                     </svg>
                                 </div>
-                            </div>
-                            <div class="item active">
                                 <div class="deco"></div>
-                                <div class="caption">За платіжними документами, які виписує постачальник</div>
-                                <div class="tipImg">
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0.800781C5.383 0.800781 0 6.18378 0 12.8008C0 19.4178 5.383 24.8008 12 24.8008C18.617 24.8008 24 19.4178 24 12.8008C24 6.18378 18.617 0.800781 12 0.800781ZM12 2.80078C17.535 2.80078 22 7.26578 22 12.8008C22 18.3358 17.535 22.8008 12 22.8008C6.465 22.8008 2 18.3358 2 12.8008C2 7.26578 6.465 2.80078 12 2.80078ZM12 6.80078C9.8 6.80078 8 8.60078 8 10.8008H10C10 9.68378 10.883 8.80078 12 8.80078C13.117 8.80078 14 9.68378 14 10.8008C13.9997 11.1745 13.8818 11.5386 13.6631 11.8416C13.4443 12.1446 13.1357 12.371 12.781 12.4888L12.375 12.6128C11.9753 12.7475 11.6278 13.0039 11.3812 13.346C11.1346 13.6882 11.0013 14.099 11 14.5208V15.8008H13V14.5198L13.406 14.3948C14.1595 14.1415 14.8148 13.6588 15.28 13.0142C15.7452 12.3697 15.997 11.5957 16 10.8008C16 8.60078 14.2 6.80078 12 6.80078ZM11 16.8008V18.8008H13V16.8008H11Z" fill="#93A2BF"/>
+                                <label for="i1">Еіс-код</label>
+                                <div class="botText">niggers)</div>
+                            </div>
+                            <div class="inputWrap tipShown0 error0">
+                                <input type="text" id="i1" placeholder="Свій варіант">
+                                <div class="comboboxImg">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
                                     </svg>
+                                </div>
+                                <div class="deco"></div>
+                                <label for="i1">Найменування оператора грм</label>
+                                <div class="botText">niggers)</div>
+                            </div>
+                            <div class="inputWrap tipShown0 error0">
+                                <input type="text" id="i1" placeholder="Уведіть назву оператора ГРМ">
+                                <div class="deco"></div>
+                                <label for="i1">Найменування оператора грм</label>
+                                <div class="botText">niggers)</div>
+                            </div>
+    
+                            <div class="radioGroup">
+                                <div class="title">НАявність  лічильника</div>
+                                <div class="radioItem"><div class="deco"></div> Є лічильник</div>
+                                <div class="radioItem"><div class="deco"></div> Немає лічильника</div>
+                            </div>
+                        </div>
+    
+                        <div class="delimeter"></div>
+    
+                        <div>
+                            <h2>Адреса газового лічильника</h2>
+                            <div class="twoColRows">
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">Область</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">Населений пункт</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                            </div>
+                            <div class="twoColRows">
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">район</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">Вулиця</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                            </div>
+                            <div class="twoColRows">
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">будинок</label>
+                                    <div class="botText">niggers)</div>
+                                </div>
+                                <div class="inputWrap tipShown0 error0">
+                                    <input type="text" id="i1" placeholder="Введіть назву вручну">
+                                    <div class="deco"></div>
+                                    <label for="i1">індекс</label>
+                                    <div class="botText">niggers)</div>
                                 </div>
                             </div>
                         </div>
+    
+                        <div class="delimeter"></div>
+    
+                        <div class="tarifAnketSection">
+                            <h2>Деталі підключення</h2>
+                            <div class="inputWrap tipShown error0">
+                                <input type="text" id="i1" placeholder="Введіть вручну">
+                                <div class="deco"></div>
+                                <label for="i1">кількість проживаючих</label>
+                                <div class="botText">Всі особи проживаючі на об’єкті, неповнолітні включно</div>
+                            </div>
+    
+                            <div class="tarifPicker">
+                                <div class="title">тариф</div>
+                                <div class="item active">
+                                    <div class="deco"></div>
+                                    <div class="caption">Щорічний</div>
+                                    <ul>
+                                        <li>
+                                            <span class="price">2.72<span> ₴/M3</span></span>
+                                        </li>
+                                        <li>Ціна не змінюється</li>
+                                        <li>Передплата на рік</li>
+                                        <li>Термін дії - календарний на рік</li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="deco"></div>
+                                    <div class="caption">Щомісячний</div>
+                                    <ul>
+                                        <li>
+                                            <span class="price">6.73<span> ₴/M3</span></span>
+                                        </li>
+                                        <li>Ціна змінюється щомісяця</li>
+                                        <li>Сплачуєте за фактом споживання</li>
+                                        <li>Термін дії - бестроковий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tarifPayPicker">
+                                <div class="title">спосіб оплати</div>
+                                <div class="item active">
+                                    <div class="deco"></div>
+                                    <div class="caption">За квитанціями розрахункової книжки постачальника</div>
+                                    <div class="tipImg">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0.800781C5.383 0.800781 0 6.18378 0 12.8008C0 19.4178 5.383 24.8008 12 24.8008C18.617 24.8008 24 19.4178 24 12.8008C24 6.18378 18.617 0.800781 12 0.800781ZM12 2.80078C17.535 2.80078 22 7.26578 22 12.8008C22 18.3358 17.535 22.8008 12 22.8008C6.465 22.8008 2 18.3358 2 12.8008C2 7.26578 6.465 2.80078 12 2.80078ZM12 6.80078C9.8 6.80078 8 8.60078 8 10.8008H10C10 9.68378 10.883 8.80078 12 8.80078C13.117 8.80078 14 9.68378 14 10.8008C13.9997 11.1745 13.8818 11.5386 13.6631 11.8416C13.4443 12.1446 13.1357 12.371 12.781 12.4888L12.375 12.6128C11.9753 12.7475 11.6278 13.0039 11.3812 13.346C11.1346 13.6882 11.0013 14.099 11 14.5208V15.8008H13V14.5198L13.406 14.3948C14.1595 14.1415 14.8148 13.6588 15.28 13.0142C15.7452 12.3697 15.997 11.5957 16 10.8008C16 8.60078 14.2 6.80078 12 6.80078ZM11 16.8008V18.8008H13V16.8008H11Z" fill="#93A2BF"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class="deco"></div>
+                                    <div class="caption">За платіжними документами, які виписує постачальник</div>
+                                    <div class="tipImg">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0.800781C5.383 0.800781 0 6.18378 0 12.8008C0 19.4178 5.383 24.8008 12 24.8008C18.617 24.8008 24 19.4178 24 12.8008C24 6.18378 18.617 0.800781 12 0.800781ZM12 2.80078C17.535 2.80078 22 7.26578 22 12.8008C22 18.3358 17.535 22.8008 12 22.8008C6.465 22.8008 2 18.3358 2 12.8008C2 7.26578 6.465 2.80078 12 2.80078ZM12 6.80078C9.8 6.80078 8 8.60078 8 10.8008H10C10 9.68378 10.883 8.80078 12 8.80078C13.117 8.80078 14 9.68378 14 10.8008C13.9997 11.1745 13.8818 11.5386 13.6631 11.8416C13.4443 12.1446 13.1357 12.371 12.781 12.4888L12.375 12.6128C11.9753 12.7475 11.6278 13.0039 11.3812 13.346C11.1346 13.6882 11.0013 14.099 11 14.5208V15.8008H13V14.5198L13.406 14.3948C14.1595 14.1415 14.8148 13.6588 15.28 13.0142C15.7452 12.3697 15.997 11.5957 16 10.8008C16 8.60078 14.2 6.80078 12 6.80078ZM11 16.8008V18.8008H13V16.8008H11Z" fill="#93A2BF"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="botActions">
+                            <a href="#" class="controlBtn back">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="controlBtn">Продовжити</a>
+                        </div>
                     </div>
-                    
-                    <div class="botActions">
-                        <a href="#" class="controlBtn back">
-                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
-                            </svg>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div>
+                    <div class="leftTipItem">
+                        <div class="caption">Підказка</div>
+                        <p>⭐️🟡ЕІС код - якщо Ви вже споживали природний газ або електроенергію, скоріш за все, у вас існує присвоєний вашому підприємству ЕІС-код...</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="contactWrp">
+                        <a href="#">
+                            <img src="img/cab/proneic.svg" alt=""> 800 000 00 00
                         </a>
-                        <a href="#" class="controlBtn">Продовжити</a>
+                        <a href="#">
+                            <img src="img/cab/logos_telegram.svg" alt=""> Telegram
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="rightSide">
-            <div>
-                <div class="leftTipItem">
-                    <div class="caption">Підказка</div>
-                    <p>⭐️🟡ЕІС код - якщо Ви вже споживали природний газ або електроенергію, скоріш за все, у вас існує присвоєний вашому підприємству ЕІС-код...</p>
-                </div>
-            </div>
-            <div>
-                <div class="contactWrp">
-                    <a href="#">
-                        <img src="img/cab/proneic.svg" alt=""> 800 000 00 00
-                    </a>
-                    <a href="#">
-                        <img src="img/cab/logos_telegram.svg" alt=""> Telegram
-                    </a>
                 </div>
             </div>
         </div>
