@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../../node_modules/normalize.css/normalize';
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #102A59;
+}
+h2{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #102A59;
+    @media (max-width: 767px) {
+        font-size: 34px;
+    }
+    @media (max-width: 630px) {
+        font-size: 26px;
+    }
+}
+
+@import "c_layout";
+@import "c_components";
+@import "c_auth";
+
+@import "c_anket";

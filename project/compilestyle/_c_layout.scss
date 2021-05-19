@@ -1,0 +1,155 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f5fa;
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    max-width: 1366px;
+    width: 100%;
+    .leftSide{
+        width: 230px;
+        padding: 28px 32px;
+        background: #FFFFFF;
+        box-shadow: inset -1px 0px 0px #C5D1E8;
+        @media(max-width: 1099px){
+            display: none;
+        }
+        .logo{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+        .priceTxt{
+            margin-top: 57px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            text-align: center;
+            color: #102A59;
+        }
+        .priceVal{
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 53px;
+            line-height: 100%;
+            text-align: center;
+            color: #102A59;
+            margin-top: 11px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+    .centerSide{
+        flex-grow: 1;
+        background-color: #fff;
+        padding: 0 32px;
+    }
+    .rightSide{
+        width: 250px;
+        background: #D2DBEA;
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 1023px){
+            display: none;
+        }
+        div:nth-child(1){
+            flex-grow: 1;
+            .leftTipItem{
+                margin: 56px 0 0;
+                padding: 0 32px;
+                .caption{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 130%;
+                    letter-spacing: 0.03em;
+                    color: rgba(16, 42, 89, 0.48);
+                    margin: 0 0 26px;
+                }
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: #102A59;
+                }
+            }
+        }
+        div:nth-child(2){
+            padding: 16px;
+            .contactWrp{
+                display: flex;
+                flex-direction: column;
+                a{
+                    text-decoration: none;
+                    border: 2px solid #C5D1E8;
+                    box-sizing: border-box;
+                    border-radius: 38px;
+                    padding: 8px;
+                    display: flex;
+                    align-items: center;
+
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 150%;
+                    letter-spacing: -0.05em;
+                    color: #102A59;
+                    img{
+                        height: 30px;
+                        width: 30px;
+                        margin-right: 8px;
+                    }
+                    & + a{
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    max-width: 1366px;
+    width: 100%;
+    padding: 24px 19px;
+    background: #0B1E3F;
+    display: flex;
+    align-items: center;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment{
+        display: flex;
+        margin-right: 100px;
+        @media (max-width: 600px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        img{
+            height: 32px;
+            margin: 0 5px;
+        }
+    }
+    .copyright{
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 100%;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '../../node_modules/normalize.css/normalize';
+*{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    // font-weight: 300;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+@mixin container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    // @media (min-width: 0px){
+    //     max-width: 390px;
+    // }
+    // @media (min-width: 568px) {
+    //     max-width: 530px;
+    // }
+    // @media (min-width: 730px) {
+    //     max-width: 700px;
+    // }
+    // @media (min-width: 1025px) {
+    //     max-width: 995px;
+    // }
+    // @media (min-width: 1280px) {
+    //     max-width: 1250px;
+    // }
+    // // @media (min-width: 1600px) {
+    // //     max-width: 1428px;
+    // // }
+
+    max-width: 1250px;
+}
+
+@import "home"

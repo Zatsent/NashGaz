@@ -1,0 +1,107 @@
+.authWrp{
+    .auth{
+        width: 100%;
+        max-width: 400px;
+        margin: 24px auto 0;
+        .headLnks{
+            display: flex;
+            justify-content: space-between;
+            a{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 100%;
+                color: #93A2BF;
+            }
+        }
+        h1{
+            margin: 32px 0 0;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 120%;
+            letter-spacing: -0.02em;
+            color: #102A59;
+        }
+        .emailPendingH1{
+            margin-top: 130px;
+        }
+        .emailNot{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 100%;
+            text-decoration-line: underline;
+            color: #102A59;
+            margin-top: 16px;
+            display: block;
+        }
+        .inputWrap{
+            margin-top: 48px;
+            & + .inputWrap{
+                margin-top: 16px;
+            }
+        }
+        .passForgotten{
+            text-align: right;
+            a{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 100%;
+                text-decoration-line: underline;
+                color: #102A59;
+            }
+        }
+        .checkBoxWrap{
+            margin-top: 16px;
+        }
+        &>.txt{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            color: #102A59;
+            margin-top: 16px;
+        }
+        .policytxt{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            color: #849AC5;
+            margin-top: 16px;
+            a{
+                color: #102A59;
+            }
+        }
+        .lnkWrp{
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .accExist{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 100%;
+                text-decoration-line: underline;
+                color: #102A59;
+            }
+        }
+
+        .wideActionLink{
+            margin-top: 32px;
+            & + .wideActionLink{
+                margin-top: 16px;
+            }
+        }
+    }
+}

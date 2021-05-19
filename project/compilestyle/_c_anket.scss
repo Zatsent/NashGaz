@@ -1,0 +1,285 @@
+.anketWrp{
+    .anketa{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 46px;
+        h1{
+            margin-top: 46px;
+        }
+        p{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 150%;
+            color: #102A59;
+        }
+        .wideActionLink2{
+            margin-top: 32px;
+        }
+        .wideActionLink2 + .wideActionLink2{
+            margin-top: 16px;
+        }
+
+        .infoDiv{
+            background: #F2F5FA;
+            border: 2px solid #B3C3E1;
+            border-radius: 6px;
+            padding: 8px 8px 8px 57px;
+            position: relative;
+            margin-top: 48px;
+            .deco{
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                font-size: 40px;
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 150%;
+                color: #102A59;
+                margin: 0;
+                & + p{
+                    margin-top: 16px;
+                }
+            }
+        }
+        .botActions{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 48px;
+        }
+
+        .topBtns{
+            margin-top: 10px;
+        }
+        
+        .twoColRows{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .inputWrap{
+                @media (max-width: 630px) {
+                    width: 100%;
+                }
+                width: calc(50% - 12px);
+                margin-bottom: 24px;
+            }
+        }
+        
+        .spivVlasnikWrap{
+            margin-top: 24px;
+            .spivVlasnikTitle{
+                margin-bottom: 26px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 100%;
+                color: #93A2BF;
+                img{
+                    vertical-align: middle;
+                }
+            }
+        }
+        
+        .delimeter{
+            height: 145px;
+        }
+
+        .tarifAnketSection{
+            .tarifPicker{
+                margin-top: 24px;
+            }
+        }
+        .tarifPayPicker{
+            margin-top: 24px;
+        }
+    }
+
+    .zoneDelim{
+        width: 100%;
+        height: 2px;
+        background: #102A59;
+        margin-top: 110px;
+    }
+    .diaLnks{
+        text-align: right;
+        a{
+            padding: 6px 16px;
+            background: #000000;
+            border: 2px solid #102A59;
+            box-sizing: border-box;
+            border-radius: 13px;
+            display: inline-block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            text-decoration: none;
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+    .dropZoneT1{
+        margin-top: 16px;
+        border: 2px dashed #B3C3E1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        text-align: center;
+        padding: 24px;
+        .txt{
+            margin: 16px 0 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.02em;
+            color: #102A59;
+        }
+        .descriptionTypes{
+            margin: 6px 0 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.02em;
+            color: #93A2BF;
+        }
+    }
+    .manualSignDeco{
+        margin-top: 16px;
+        background: #FFFFFF;
+        border: 2px solid #C5D1E8;
+        box-sizing: border-box;
+        border-radius: 12px;
+        text-align: center;
+        padding: 48px 0 16px;
+    }
+    .rightLink{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #102A59;
+            text-decoration: none;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #102A59;
+            }
+            img{
+                vertical-align: middle;
+                margin-left: 20px;
+            }
+        }
+    }
+    .donwloadItem{
+        background: #8BA2CD;
+        border-radius: 7px;
+        padding: 8px 16px 8px 8px;
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+        & + .donwloadItem{
+            margin-top: 4px;
+        }
+        &>img{
+            border-radius: 4px;
+            width: 95px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 16px;
+        }
+        .name{
+            flex-grow: 1;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 130%;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+        .controls{
+            display: flex;
+            align-items: center;
+        }
+        .loaded{
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #6FCF97;
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 11px;
+            }
+        }
+        .loading{
+            width: 32px;
+            height: 32px;
+            border-radius: 50px;
+            border-top: 3px solid #C5D1E8;
+            border-bottom: 3px solid #C5D1E8;
+            border-left: 3px solid #C5D1E8;
+            border-right: 3px solid transparent;
+            animation: load1 2s linear infinite;;
+            @keyframes load1 {
+                from{
+                    transform: rotate(0);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        .close{
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            margin-left: 8px;
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 2px;
+                background-color: #C5D1E8;
+            }
+            &::before{
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &::after{
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}
