@@ -316,6 +316,36 @@
         margin-bottom: 24px;
         width: 100%;
     }
+    .botText{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: #45597F;
+        margin-top: 4px;
+        opacity: 0;
+        transition: 0.3s ease;
+        width: 100%;
+    }
+    &.tipShown{
+        .botText{
+            opacity: 1;
+        }
+    }
+    &.error{
+        label{
+            color: #EF5DA8;
+        }
+        input, input::placeholder{
+            color: #F799C9;
+        }
+        // .deco{
+        //     background: #F799C9;
+        // }
+        .botText{
+            color: #EF5DA8;
+        }
+    }
 }
 .radioItem{
     padding: 10px 0;

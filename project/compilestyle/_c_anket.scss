@@ -137,6 +137,29 @@
         border-radius: 12px;
         text-align: center;
         padding: 24px;
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 0px;
+            height: 0px;
+            transition: 2s ease;
+            z-index: 1;
+            background: #F5F9FF;
+        }
+        &.active:before{
+            width: 2000px;
+            height: 2000px;
+        }
+        &>*{
+            position: relative;
+            z-index: 2;
+        }
         .txt{
             margin: 16px 0 0;
             font-family: Roboto;
@@ -219,6 +242,9 @@
             font-size: 15px;
             line-height: 130%;
             letter-spacing: -0.02em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             color: #FFFFFF;
         }
         .controls{
