@@ -207,7 +207,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    .txt{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: #102A59;
+        display: block;
+    }
     .textCont{
         .txt{
             font-style: normal;
