@@ -172,6 +172,7 @@ header.bg{
     background: linear-gradient(91.85deg, rgba(233, 240, 255, 0.7) 1.55%, rgba(213, 226, 252, 0.7) 96.96%);
 }
 .contactBtn{
+    z-index: 100;
     position: fixed;
     bottom: 100px;
     right: 0;
