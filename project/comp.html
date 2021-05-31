@@ -8,25 +8,51 @@
     <link rel="stylesheet" href="css/cabinetStyle.css">
 </head>
 <body>
-    <div class="inputWrap slim tipShown0 error0">
-        <input type="text" id="i1" placeholder="Iм’я власника">
-        <div class="deco"></div>
-        <label for="i1">email</label>
-        <div class="botText">niggers)</div>
+    <div id="app">
+        <div class="inputWrap slim tipShown0 error0">
+            <input type="text" id="i1" placeholder="Iм’я власника">
+            <div class="deco"></div>
+            <label for="i1">email</label>
+            <div class="botText">niggers)</div>
+        </div>
+        <div class="inputWrap tipShown0 error0">
+            <v-select :options="options"></v-select>
+            <div class="deco"></div>
+            <label for="i1">Вид будівлі</label>
+            <div class="botText">niggers)</div>
+        </div>
+    
+        <a href="#" class="controlBtn disabled">Відправити</a>
+    
+        <a href="#" class="controlBtn back disabled">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
+            </svg>
+        </a>
+    
+        <div class="radioGroup">
+            <div class="title">НАявність  субсидії</div>
+            <div class="radioItem disabled0"><div class="deco"></div> Є субсидія</div>
+            <div class="radioItem disabled"><div class="deco"></div> Немає субсидії</div>
+        </div>
     </div>
-
-    <a href="#" class="controlBtn disabled">Відправити</a>
-
-    <a href="#" class="controlBtn back disabled">
-        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.55078 11.0011L11.4503 1.10156M1.55078 11.0011L11.4503 20.9006M1.55078 11.0011H20.4503" stroke-width="2"/>
-        </svg>
-    </a>
-
-    <div class="radioGroup">
-        <div class="title">НАявність  субсидії</div>
-        <div class="radioItem disabled0"><div class="deco"></div> Є субсидія</div>
-        <div class="radioItem disabled"><div class="deco"></div> Немає субсидії</div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-select@latest"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+    <script>
+        Vue.component('v-select', VueSelect.VueSelect);
+        new Vue({
+            el: '#app',
+            data(){
+                return {
+                    options: [
+                        'aaa',
+                        'bbb',
+                        'ccc',
+                    ]
+                }
+            }
+        })
+    </script>
 </body>
 </html>

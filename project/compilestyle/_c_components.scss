@@ -16,6 +16,16 @@
         color: #102A59;
         transition: 0.3s ease;
     }
+    .vs__dropdown-toggle{
+        height: 36px;
+        border: none !important;
+    }
+    .vs__open-indicator, .vs__clear{
+        fill: #93A2BF;
+    }
+    input:not(.vs__search){
+        padding: 7px 36px 7px 0;
+    }
     input{
         font-family: Roboto;
         font-style: normal;
@@ -27,8 +37,7 @@
         outline: none;
         border: none;
         background: transparent;
-        padding: 7px 36px 7px 0;
-        width: 100%;
+        display: block;
         &::placeholder{
             color: #93A2BF;
         }

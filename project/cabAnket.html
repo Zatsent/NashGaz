@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cabinetStyle.css">
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="app">
         <div class="template-request">
             <div class="leftSide">
                 <a href="#" class="logo">
@@ -124,11 +124,11 @@
                             <h2>Дані про газовий лічильник</h2>
                             <div class="twoColRows">
                                 <div class="inputWrap tipShown0 error0">
-                                    <input type="text" id="i1" placeholder="Iм’я власника">
+                                    <v-select :options="options"></v-select>
                                     <div class="comboboxImg">
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.800781L5 5.80078L10 0.800781H0Z" fill="#93A2BF"/>
-                                        </svg>
+                                        </svg> -->
                                     </div>
                                     <div class="deco"></div>
                                     <label for="i1">Вид будівлі</label>
@@ -331,4 +331,22 @@
         <a href="#" class="copyright">Created by <b>OwlWeb Team</b></a>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-select@latest"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+<script>
+    Vue.component('v-select', VueSelect.VueSelect);
+    new Vue({
+        el: '#app',
+        data(){
+            return {
+                options: [
+                    'aaa',
+                    'bbb',
+                    'ccc',
+                ]
+            }
+        }
+    })
+</script>
 </html>
