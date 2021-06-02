@@ -813,3 +813,25 @@
         margin: 3px 0;
     }
 }
+
+.blockCaption{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #102A59;
+    position: relative;
+    padding-bottom: 8px;
+    &.und{
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #102A59;
+        }
+    }
+}

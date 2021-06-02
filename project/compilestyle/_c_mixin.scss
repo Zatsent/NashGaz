@@ -1,0 +1,16 @@
+@mixin defayltBlockPadding {
+    padding-left: 70px;
+    padding-right: 70px;
+    @media (max-width: 1365px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media (max-width: 767px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @media (max-width: 575px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
