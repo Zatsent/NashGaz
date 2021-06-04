@@ -142,14 +142,39 @@
         span{
             font-size: 22px;
         }
-        &:before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background-color: #102A59;
+        // &:before{
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     height: 2px;
+        //     background-color: #102A59;
+        // }
+    }
+    .anketActions{
+        margin-top: 34px;
+        @media (max-width: 1365px) {
+            display: none;
+        }
+        a{
+            text-align: center;
+            padding: 21px 0;
+            display: block;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 100%;
+            color: #102A59;
+            text-decoration: none;
+            border: 2px solid #B3C3E1;
+        }
+        a:nth-child(1){
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+        }
+        a:nth-child(2){
+            border-radius: 0 0 6px 6px ;
         }
     }
 }
