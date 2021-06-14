@@ -26,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-editprofile:before {
+  content: "\e919";
+}
 .ic-check:before {
   content: "\e918";
 }

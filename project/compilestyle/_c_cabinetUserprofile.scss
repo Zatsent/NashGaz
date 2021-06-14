@@ -597,6 +597,10 @@
                 padding-right: 50px;
                 padding: 24px 50px 24px 0;
                 box-shadow: 0 2px 0 0 #102A59;
+                a{
+                    color: #102A59;
+                    text-decoration: none;
+                }
                 .ic-arrow-right-line{
                     position: absolute;
                     top: 26px;
@@ -789,6 +793,10 @@
                     letter-spacing: 0.025em;
                     color: #102A59;
                     margin: 8px 0 0;
+                    a{
+                        color: #102A59;
+                        text-decoration: none;
+                    }
                 }
             }
             .title{
