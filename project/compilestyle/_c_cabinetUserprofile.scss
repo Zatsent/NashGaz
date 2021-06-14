@@ -155,10 +155,12 @@
     }
     .anketActions{
         margin-top: 34px;
+        display: block;
+        text-decoration: none;
         @media (max-width: 1365px) {
             display: none;
         }
-        a{
+        &>span{
             text-align: center;
             padding: 21px 0;
             display: block;
@@ -174,11 +176,11 @@
                 background: #DFE8FA;
             }
         }
-        a:nth-child(1){
+        &>span:nth-child(1){
             border-bottom: none;
             border-radius: 6px 6px 0 0;
         }
-        a:nth-child(2){
+        &>span:nth-child(2){
             border-radius: 0 0 6px 6px ;
         }
     }
