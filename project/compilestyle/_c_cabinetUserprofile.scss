@@ -305,9 +305,11 @@
                 transition: 0.3s ease;
                 &:nth-child(1){
                     // width: 25%;
+                    vertical-align: baseline;
                 }
                 &:nth-child(2){
                     // width: 25%;
+                    vertical-align: baseline;
                     text-align: right;
                     position: relative;
                     &:before{
@@ -315,7 +317,7 @@
                         background-color: #B3C3E1;
                         position: absolute;
                         left: 0;
-                        top: 50%;
+                        top: 33px;
                         transform: translate(0 , -50%);
                         height: 30px;
                         width: 2px;
@@ -328,6 +330,11 @@
                     @media (max-width: 575px) {
                         width: 56px;
                     }
+                    .lnksWrp{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
                     a{
                         text-decoration: none;
                         font-style: normal;
@@ -336,6 +343,14 @@
                         line-height: 150%;
                         letter-spacing: -0.065em;
                         color: inherit;
+                        display: block;
+                    }
+                    .markSuccess{
+                        padding: 8px 16px;
+                        border: 2px solid #102A59;
+                        border-radius: 50px;
+                        width: 213px;
+                        margin-top: 20px;
                     }
                     .ic-download-2-line{
                         margin-left: 16px;
@@ -345,7 +360,7 @@
                         background-color: #B3C3E1;
                         position: absolute;
                         left: 20px;
-                        top: 50%;
+                        top: 33px;
                         transform: translate(0 , -50%);
                         height: 30px;
                         width: 2px;
@@ -407,6 +422,16 @@
             padding: 16px;
         }
     }
+}
+.rahunotTableEpmty{
+    background: #DFE8FA;
+    padding: 24px;
+    text-align: center;
+    margin: 32px 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.025em;
+    color: #102A59;
 }
 .pricesTable{
     @include defayltBlockPadding;
@@ -872,6 +897,76 @@
             }
             &.underline2{
                 border-bottom: 3px solid #B3C3E1;
+            }
+        }
+    }
+}
+
+.emailPhoneChanger{
+    @include defayltBlockPadding;
+    margin-top: 136px;
+    .editInputWrp{
+        font-size: 18px;
+        line-height: 150%;
+        color: #102A59;
+    }
+    .inputCounterData{
+        margin-top: 8px;
+        display: flex;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        input{
+            border: 2px solid #B3C3E1;
+            box-sizing: border-box;
+            border-radius: 3px;
+            height: 53px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 100%;
+            // letter-spacing: 0.125em;
+            color: #102A59;
+            width: unset;
+            flex-grow: 1;
+            padding: 16px;
+            outline: none;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        button{
+            cursor: pointer;
+            height: 53px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            background: #102A59;
+            border-radius: 3px;
+            border: none;
+            margin-left: 16px;
+            padding: 0 21px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s ease;
+            @media (max-width: 767px) {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            .ic-arrow-right-line{
+                margin-left: 10px;
+            }
+            &:hover{
+                background-color: #0B1E3F;
+
+            }
+            &.disabled{
+                pointer-events: none;
+                background-color: #DFE8FA;
             }
         }
     }
