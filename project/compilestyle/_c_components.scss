@@ -940,7 +940,6 @@
             color: #102A59;
             padding-bottom: 8px;
             margin-bottom: 16px;
-            box-shadow: 0 2px 0 0 #9ADCB4;
         }
         .txtwrp{
             font-size: 16px;
@@ -958,6 +957,16 @@
                 color: #102A59;
                 text-decoration: none;
                 margin-top: 24px;
+            }
+        }
+        &.success{
+            .hd{
+                box-shadow: 0 2px 0 0 #9ADCB4;
+            }
+        }
+        &.error{
+            .hd{
+                box-shadow: 0 2px 0 0 #DC9AAE;
             }
         }
     }
